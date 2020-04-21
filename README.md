@@ -1,4 +1,4 @@
-Online Days-Off Manager Portal
+Vacation Days-Off Management Portal
 ------------
 
 This application is a tool, via which the days-off requests in a company can be 
@@ -22,7 +22,7 @@ System Guide - for users
 
 The user has to log in via the login.php page. e.g. if the webpage is deployed in
 a folder name "days-off-portal" in the xampp directory, the user can access it
-in localhost/days-off-portal/login.php link
+in localhost/vacation_portal/login.php link
 
 He/she enters his/her credentials (email, password given by managing administrator)
 and, if being an employee, he/she gets in a webpage where
