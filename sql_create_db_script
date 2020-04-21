@@ -1,0 +1,26 @@
+CREATE TABLE application (
+    application_id int,
+    user_id VARCHAR(255),
+    date_submitted datetime,
+    date_requested_start datetime,
+    date_requested_end datetime,
+    days_requested int,
+	reason varchar(255),
+	status varchar(255),
+    PRIMARY KEY (application_id),
+    FOREIGN KEY (user_id) REFERENCES users(email)
+); 
+
+CREATE TABLE users (
+	email varchar(255),
+    password VARCHAR(255),
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+	type varchar(255),
+	admin_email varchar(255),
+    PRIMARY KEY (email),
+    FOREIGN KEY (admin_email) REFERENCES users(email)
+); 
+
+INSERT INTO users (email, password, first_name, last_name, type, admin_email)
+VALUES ("example_mail@gmail.com", "root", "Nikolas", "Stasinos", "admin", "example_mail@gmail.com");
